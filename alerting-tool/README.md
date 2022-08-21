@@ -20,35 +20,35 @@ The aim of this project is to  monitor systems to deal with a lot of data and mu
 It's a monitoring system where users get informed via different ways when a new alert appears.
 
 ## Functionalities
-###**List current Alerts**
+### **List current Alerts**
 - The GUI Entrypoint provide a list of Alerts
 - Visualize the difference of alerts (already acknowledged and open/new) 
 
-###**Maintain contacts**
+### **Maintain contacts**
 - CRUD functionality
 - a contact has a name a value and a type (sms,pager,email)
 
-###**Maintain contact-groups**
+### **Maintain contact-groups**
 - CRUD functionality
 - contact groups have a name and contain one or more contacts.
 additionally groups have a certain state. (active|inactive).
 ONE or MORE groups can be active!
 - Assign contacts to one or many contact-groups or remove them from current groups
 
-###**Receive System Alerts**
+### **Receive System Alerts**
 It should be possible to receive new alerts from any other system.
 Received Alerts should be stored in the database with the time they have been received.
 In general, new alerts need to be acknowledged by the user and will appear as relevant and new as long as an acknowledgement happened.
 
-###**(Auto-) Acknowledge Alerts [commits]**
+### **(Auto-) Acknowledge Alerts [commits]**
 It's possible to acknowledge ALL open alerts at once, there is no need to acknowledge single alerts one by one.
 Further, having the option 'snooze' or auto-acknowledgement functionality. 
 It means if this functionality gets called all new alerts will be automatically acknowledged for a certain timeframe. e.g. 10Minutes. After that time alerts are new and need to be acknowledged manually again.
 
-###**Send Notifications**
+### **Send Notifications**
 When new alerts appear which are not auto-acknowledged, the system inform users within the currently active user group via the corresponding contact type (sms,pager,email)
 
-###**How it works**
+### **How it works**
 - 1. A new alert appears via API Call
 - 2. Store in databse
 - 2.a check if autoacknowledge (snooze) is active and set confirmed flag if necessary
