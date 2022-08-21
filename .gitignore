@@ -1,0 +1,42 @@
+.idea
+.vscode
+
+/alerting-tool/node_modules
+/alerting-tool/public/hot
+/alerting-tool/public/storage
+/alerting-tool/storage/*.key
+/alerting-tool/vendor
+/alerting-tool/.env
+/alerting-tool/.env.backup
+/alerting-tool/.phpunit.result.cache
+/alerting-tool/docker-compose.override.yml
+/alerting-tool/Homestead.json
+/alerting-tool/Homestead.yaml
+/alerting-tool/npm-debug.log
+/alerting-tool/yarn-error.log
+/alerting-tool/.idea
+/alerting-tool/.vscode
+
+.DS_Store
+/vue-frontend-boilerplate/node_modules
+/vue-frontend-boilerplate/dist
+
+
+# local env files
+/vue-frontend-boilerplate/.env.local
+/vue-frontend-boilerplate/.env.*.local
+
+# Log files
+/vue-frontend-boilerplate/npm-debug.log*
+/vue-frontend-boilerplate/yarn-debug.log*
+/vue-frontend-boilerplate/yarn-error.log*
+/vue-frontend-boilerplate/pnpm-debug.log*
+
+# Editor directories and files
+/vue-frontend-boilerplate/.idea
+/vue-frontend-boilerplate/.vscode
+/vue-frontend-boilerplate/*.suo
+/vue-frontend-boilerplate/*.ntvs*
+/vue-frontend-boilerplate/*.njsproj
+/vue-frontend-boilerplate/*.sln
+/vue-frontend-boilerplate/*.sw?
